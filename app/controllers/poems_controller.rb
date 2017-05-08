@@ -3,4 +3,8 @@ class PoemsController < ApplicationController
 		@poems = Poem.all
 		render json: @poems
 	end
+
+	def show
+		render json: @poems
+	end
 end
